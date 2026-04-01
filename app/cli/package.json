@@ -1,0 +1,22 @@
+{
+  "name": "resumake",
+  "description": "Generate a LaTeX resume PDF from a JSON file.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "bin/resumake.js",
+  "bin": {
+    "resumake": "./bin/resumake.js"
+  },
+  "scripts": {
+    "build": "babel src -d lib --copy-files",
+    "start": "node bin/resumake.js"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "common-tags": "^1.4.0",
+    "node-latex": "^2.5.0",
+    "sanitize-latex": "^0.1.2"
+  }
+}
